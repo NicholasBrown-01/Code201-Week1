@@ -1,0 +1,59 @@
+/*PAGE BACKGROUND*/
+body {
+
+    background-image: url(gridwallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(22, 22, 22);
+
+}
+
+
+main {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+.biography {
+
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 535px;
+
+}
+
+.education {
+
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 535px;
+
+}
+
+.jobExperience {
+
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 535px;
+
+}
+
+.goals {
+
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 535px;
+
+}
