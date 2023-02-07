@@ -46,6 +46,7 @@ function questionOne() {
     alert('Please try your answer again');
     questionOne();
   }
+  return answerLower;
 }
 
 questionOne();
@@ -75,6 +76,7 @@ function questionTwo() {
     alert('Please try your answer again');
     questionTwo();
   }
+  return answerLower;
 }
 
 questionTwo();
@@ -106,6 +108,7 @@ function questionThree() {
     alert('Please try your answer again');
     questionThree();
   }
+  return answerLower;
 }
 
 questionThree();
@@ -136,6 +139,7 @@ function questionFour() {
     alert('Please try your answer again');
     questionFour();
   }
+  return answerLower;
 }
 
 questionFour();
@@ -167,6 +171,7 @@ function questionFive() {
     questionFive();
 
   }
+  return answerLower;
 }
 
 questionFive();
