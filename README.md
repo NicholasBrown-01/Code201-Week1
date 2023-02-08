@@ -19,6 +19,8 @@ Initial learning and implementation of creating and calling `index.html`, `app.j
 #### Lighthouse Accessibility Report Score
 
 ![LightHouse Score](img/LightHouseLab2.png)
+![LightHouse Score](img/LightHouseLab03.png)
+
 
 #### Provide a screenshot of your score after running a Lighthouse Accessibility report.
 
