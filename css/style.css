@@ -1,11 +1,18 @@
-/*PAGE BACKGROUND*/
+
+
 body {
 
     background-image: url(gridwallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: rgb(22, 22, 22);
+    
 
+}
+
+.aboutMe {
+    margin: 0 auto;
+    
 }
 
 
@@ -13,7 +20,8 @@ main {
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    
 
 }
 
@@ -24,7 +32,8 @@ main {
     border-style: solid;
     padding: 5px;
     margin: 10px;
-    max-width: 535px;
+    max-width: 600px;
+    
 
 }
 
@@ -34,7 +43,7 @@ main {
     border-style: solid;
     padding: 5px;
     margin: 10px;
-    max-width: 535px;
+    max-width: 600px;
 
 }
 
@@ -44,7 +53,7 @@ main {
     border-style: solid;
     padding: 5px;
     margin: 10px;
-    max-width: 535px;
+    max-width: 600px;
 
 }
 
@@ -54,6 +63,44 @@ main {
     border-style: solid;
     padding: 5px;
     margin: 10px;
-    max-width: 535px;
+    mxn-width: 600px;
 
+}
+
+.topTen {
+
+    border: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    max-width: 600px;
+    
+
+}
+
+
+ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+    
+}
+
+ul {
+    
+    list-style: disc;
+    list-style-position: inside;
+    
+}
+
+h1 {
+    font-weight: bolder;
+    
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bolder;
 }
