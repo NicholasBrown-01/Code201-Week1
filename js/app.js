@@ -6,7 +6,7 @@ let aName = '';
 
 function userName() {
   aName = prompt('Welcome, what is your name?');
-  console.log('The user entered: ' + aName);
+//   console.log('The user entered: ' + aName);
 
   if (aName && aName.length >= 1) {
     window.alert('Wonderful to have you ' + aName + ', please feel free to read about me on this site.');
@@ -37,7 +37,7 @@ function questionOne() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    console.log('Answer yes: ' + answerLower);
+    // console.log('Answer yes: ' + answerLower);
     alert('You are correct!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
@@ -48,7 +48,7 @@ function questionOne() {
     alert('Please try your answer again');
     questionOne();
   }
-  return answerLower;
+
 }
 
 questionOne();
@@ -69,7 +69,7 @@ function questionTwo() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    console.log('Answer yes: ' + answerLower);
+    // console.log('Answer yes: ' + answerLower);
     alert('Nope! I live in the country on over 30 Acres!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
@@ -80,7 +80,7 @@ function questionTwo() {
     alert('Please try your answer again');
     questionTwo();
   }
-  return answerLower;
+
 }
 
 questionTwo();
@@ -92,19 +92,19 @@ questionTwo();
 function questionThree() {
   let answer = prompt('Do I raise animals? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-//   if (!answer) {
-//     alert('Please try your answer again');
-//     questionThree();
-//   }
+  //   if (!answer) {
+  //     alert('Please try your answer again');
+  //     questionThree();
+  //   }
 
-let answerLower;
+  let answerLower;
 
-if (answer) {
-  answerLower = answer.toLowerCase();
-}
+  if (answer) {
+    answerLower = answer.toLowerCase();
+  }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    console.log('Answer yes: ' + answerLower);
+    // console.log('Answer yes: ' + answerLower);
     alert('Absolutely! I have raised Pigs, Goats, Chickens, Turkeys, Cows, and Dogs!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
@@ -115,7 +115,7 @@ if (answer) {
     alert('Please try your answer again');
     questionThree();
   }
-  return answerLower;
+
 }
 
 questionThree();
@@ -126,18 +126,18 @@ questionThree();
 function questionFour() {
   let answer = prompt('Do I have a family? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-//   if (!answer) {
-//     alert('Please try your answer again');
-//     questionFour();
-//   }
+  //   if (!answer) {
+  //     alert('Please try your answer again');
+  //     questionFour();
+  //   }
 
-let answerLower;
+  let answerLower;
 
-if (answer) {
-  answerLower = answer.toLowerCase();
-}
+  if (answer) {
+    answerLower = answer.toLowerCase();
+  }
   if (answerLower === 'yes' || answerLower === 'y') {
-    console.log('Answer yes: ' + answerLower);
+    // console.log('Answer yes: ' + answerLower);
     alert('I sure do! I have an amazing wife and 4 children.');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
@@ -148,7 +148,7 @@ if (answer) {
     alert('Please try your answer again');
     questionFour();
   }
-  return answerLower;
+
 }
 
 questionFour();
@@ -159,19 +159,19 @@ questionFour();
 function questionFive() {
   let answer = prompt('Am I a good coder? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-//   if (!answer) {
-//     alert('Please try your answer again');
-//     questionFive();
-//   }
+  //   if (!answer) {
+  //     alert('Please try your answer again');
+  //     questionFive();
+  //   }
 
-let answerLower;
+  let answerLower;
 
-if (answer) {
-  answerLower = answer.toLowerCase();
-}
+  if (answer) {
+    answerLower = answer.toLowerCase();
+  }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    console.log('Answer yes: ' + answerLower);
+    // console.log('Answer yes: ' + answerLower);
     alert('You are too kind! This took forever to figure out!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
@@ -183,7 +183,7 @@ if (answer) {
     questionFive();
 
   }
-  return answerLower;
+
 }
 
 questionFive();
