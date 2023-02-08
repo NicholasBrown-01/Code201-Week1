@@ -26,13 +26,15 @@ userName();
 function questionOne() {
   let answer = prompt('Do I like dogs? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  if (!answer) {
-    alert('Please try your answer again');
-    questionOne();
-  }
+  //   if (!answer) {
+  //     alert('Please try your answer again');
+  //   }
 
-  let answerLower = answer.toLowerCase();
-  console.log('This is just here to prevent an error: ' + answerLower);
+  let answerLower;
+
+  if (answer) {
+    answerLower = answer.toLowerCase();
+  }
 
   if (answerLower === 'yes' || answerLower === 'y') {
     console.log('Answer yes: ' + answerLower);
@@ -56,13 +58,15 @@ questionOne();
 function questionTwo() {
   let answer = prompt('Do I live in the city? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  if (!answer) {
-    alert('Please try your answer again');
-    questionTwo();
-  }
+  //   if (!answer) {
+  //     alert('Please try your answer again');
+  //     questionTwo();
+  //   }
+  let answerLower;
 
-  let answerLower = answer.toLowerCase();
-  console.log('This is just here to prevent an error: ' + answerLower);
+  if (answer) {
+    answerLower = answer.toLowerCase();
+  }
 
   if (answerLower === 'yes' || answerLower === 'y') {
     console.log('Answer yes: ' + answerLower);
@@ -88,13 +92,16 @@ questionTwo();
 function questionThree() {
   let answer = prompt('Do I raise animals? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  if (!answer) {
-    alert('Please try your answer again');
-    questionThree();
-  }
+//   if (!answer) {
+//     alert('Please try your answer again');
+//     questionThree();
+//   }
 
-  let answerLower = answer.toLowerCase();
-  console.log('This is just here to prevent an error: ' + answerLower);
+let answerLower;
+
+if (answer) {
+  answerLower = answer.toLowerCase();
+}
 
   if (answerLower === 'yes' || answerLower === 'y') {
     console.log('Answer yes: ' + answerLower);
@@ -119,14 +126,16 @@ questionThree();
 function questionFour() {
   let answer = prompt('Do I have a family? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  if (!answer) {
-    alert('Please try your answer again');
-    questionFour();
-  }
+//   if (!answer) {
+//     alert('Please try your answer again');
+//     questionFour();
+//   }
 
-  let answerLower = answer.toLowerCase();
-  console.log('This is just here to prevent an error: ' + answerLower);
+let answerLower;
 
+if (answer) {
+  answerLower = answer.toLowerCase();
+}
   if (answerLower === 'yes' || answerLower === 'y') {
     console.log('Answer yes: ' + answerLower);
     alert('I sure do! I have an amazing wife and 4 children.');
@@ -150,13 +159,16 @@ questionFour();
 function questionFive() {
   let answer = prompt('Am I a good coder? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  if (!answer) {
-    alert('Please try your answer again');
-    questionFive();
-  }
+//   if (!answer) {
+//     alert('Please try your answer again');
+//     questionFive();
+//   }
 
-  let answerLower = answer.toLowerCase();
-  console.log('This is just here to prevent an error: ' + answerLower);
+let answerLower;
+
+if (answer) {
+  answerLower = answer.toLowerCase();
+}
 
   if (answerLower === 'yes' || answerLower === 'y') {
     console.log('Answer yes: ' + answerLower);
