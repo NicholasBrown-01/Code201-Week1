@@ -200,7 +200,7 @@ while (numOfGuesses) {
 
   let userGuess = prompt('Guess what number I am thinking of? (1-10)');
   console.log(userGuess);
-  let comparedNumber = parseInt(userGuess);
+  let comparedNumber = +(userGuess);
 
   if (comparedNumber === correctNumber) {
     alert(`Congratulations! You picked the number ${correctNumber}!`);
@@ -244,19 +244,19 @@ for (let i = 0; i < 6; i++) {
   console.log(`Attempt # ${attempts}`);
   console.log(`Attempt i ${i}`);
 
-  let userGuesses = prompt(`${attempts} foods left to guess!`);
-  // console.log(userGuesses);
+  let userGuesses = prompt(`${attempts} foods left to guess!`).toLowerCase();
+  console.log(userGuesses);
 
-  // If what the User guess is IN the Food Array
+  // If what the User guess is IN the Food Array...and take away an attempt
 
-  if (foods.includes(userGuesses.toLowerCase())) {
+  if (foods.includes(userGuesses)) {
     alert(`Yes! ${userGuesses} is a favorite food!`);
     userScore++;
     attempts--;
     foods = foods.filter(element => element !== userGuesses);
     console.log(foods);
 
-    // If the User guess is NOT in the Food Array
+    // If the User guess is NOT in the Food Array do this...and take away an attempt
   } else {
     alert(`Unfortunately ${userGuesses} is NOT a favorite...`);
     attempts--;
