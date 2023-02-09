@@ -6,7 +6,7 @@ let aName = '';
 
 function userName() {
   aName = prompt('Welcome, what is your name?');
-//   console.log('The user entered: ' + aName);
+  //   console.log('The user entered: ' + aName);
 
   if (aName && aName.length >= 1) {
     window.alert('Wonderful to have you ' + aName + ', please feel free to read about me on this site.');
@@ -233,46 +233,51 @@ let userScore = 0;
 let attempts = 6;
 
 
-let foods = ['pizza', 'cookies', 'french fries', 'cake', 'salad', 'wings', 'pasta', 'ice cream', 'soup', 'chicken', 'steak', 'fish', 'shrimp', 'seafood', 'bbq'];
-let foodDisplay = foods.join(', ');
+function favoriteFoodsGame() {
 
-alert('On the following prompts, please guess some of my favorite foods! You will have 6 tries!');
+  let foods = ['pizza', 'cookies', 'french fries', 'cake', 'salad', 'wings', 'pasta', 'ice cream', 'soup', 'chicken', 'steak', 'fish', 'shrimp', 'seafood', 'bbq'];
+  let foodDisplay = foods.join(', ');
 
-// Start of Prompt Loop
+  alert('On the following prompts, please guess some of my favorite foods! You will have 6 tries!');
 
-for (let i = 0; i < 6; i++) {
-  console.log(`Attempt # ${attempts}`);
-  console.log(`Attempt i ${i}`);
+  // Start of Prompt Loop
 
-  let userGuesses = prompt(`${attempts} foods left to guess!`).toLowerCase();
-  console.log(userGuesses);
+  for (let i = 0; i < 6; i++) {
+    console.log(`Attempt # ${attempts}`);
+    console.log(`Attempt i ${i}`);
 
-  // If what the User guess is IN the Food Array...and take away an attempt
+    let userGuesses = prompt(`${attempts} foods left to guess!`).toLowerCase();
+    console.log(userGuesses);
 
-  if (foods.includes(userGuesses)) {
-    alert(`Yes! ${userGuesses} is a favorite food!`);
-    userScore++;
-    attempts--;
-    foods = foods.filter(element => element !== userGuesses);
-    console.log(foods);
+    // If what the User guess is IN the Food Array...and take away an attempt
+
+    if (foods.includes(userGuesses)) {
+      alert(`Yes! ${userGuesses} is a favorite food!`);
+      userScore++;
+      attempts--;
+      foods = foods.filter(element => element !== userGuesses);
+      console.log(foods);
 
     // If the User guess is NOT in the Food Array do this...and take away an attempt
-  } else {
-    alert(`Unfortunately ${userGuesses} is NOT a favorite...`);
-    attempts--;
+    } else {
+      alert(`Unfortunately ${userGuesses} is NOT a favorite...`);
+      attempts--;
+    }
+  }
+
+  // All possible items in Food Array are Displayed
+
+  alert(`Here are the possible correct foods: ${foodDisplay}!`);
+
+  // Display the Users corrected amount of guesses
+
+  if (userScore > 1) {
+    alert(`Hey ${aName}! Looks like you got ${userScore} correct! Great job!`);
+  }
+
+  if (userScore < 1) {
+    alert(`Wow ${aName}! You got ${userScore} right, that's terrible.`);
   }
 }
 
-// All possible items in Food Array are Displayed
-
-alert(`Here are the possible correct foods: ${foodDisplay}!`);
-
-// Display the Users corrected amount of guesses
-
-if (userScore > 1) {
-  alert(`Hey ${aName}! Looks like you got ${userScore} correct! Great job!`);
-}
-
-if (userScore < 1) {
-  alert(`Wow ${aName}! You got ${userScore} right, that's terrible.`);
-}
+favoriteFoodsGame();
