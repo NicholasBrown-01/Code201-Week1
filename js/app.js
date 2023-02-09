@@ -190,39 +190,43 @@ questionFive();
 
 alert('Thank you for taking the time ' + aName + ' to get to know me better. I hope you enjoy the rest of your time on this site! But first here are 2 more questions!');
 
+function numberGuessingGame() {
 // Question 6: Guess a number game
 
-let numOfGuesses = 4;
-let correctNumber = 5;
+  let numOfGuesses = 4;
+  let correctNumber = 5;
 
 
-while (numOfGuesses) {
+  while (numOfGuesses) {
 
-  let userGuess = prompt('Guess what number I am thinking of? (1-10)');
-  console.log(userGuess);
-  let comparedNumber = +(userGuess);
+    let userGuess = prompt('Guess what number I am thinking of? (1-10)');
+    console.log(userGuess);
+    let comparedNumber = +(userGuess);
 
-  if (comparedNumber === correctNumber) {
-    alert(`Congratulations! You picked the number ${correctNumber}!`);
-    break;
+    if (comparedNumber === correctNumber) {
+      alert(`Congratulations! You picked the number ${correctNumber}!`);
+      break;
 
-  } else if (numOfGuesses === 1) {
-    alert(`Attempts Up...the number was ${correctNumber}!`);
-    break;
+    } else if (numOfGuesses === 1) {
+      alert(`Attempts Up...the number was ${correctNumber}!`);
+      break;
 
-  } else if (comparedNumber > 5) {
-    alert('Too high!');
-    numOfGuesses--;
-    alert(`You have ${numOfGuesses} left!`);
+    } else if (comparedNumber > 5) {
+      alert('Too high!');
+      numOfGuesses--;
+      alert(`You have ${numOfGuesses} left!`);
 
-  } else {
-    (comparedNumber < 5);
-    alert('Too low!');
-    numOfGuesses--;
-    alert(`You have ${numOfGuesses} left!`);
+    } else {
+      (comparedNumber < 5);
+      alert('Too low!');
+      numOfGuesses--;
+      alert(`You have ${numOfGuesses} left!`);
 
+    }
   }
 }
+
+numberGuessingGame();
 
 
 // Question 7: Multiple Answer Array Game
