@@ -6,7 +6,6 @@ let aName = '';
 
 function userName() {
   aName = prompt('Welcome, what is your name?');
-  //   console.log('The user entered: ' + aName);
 
   if (aName && aName.length >= 1) {
     window.alert('Wonderful to have you ' + aName + ', please feel free to read about me on this site.');
@@ -26,10 +25,6 @@ userName();
 function questionOne() {
   let answer = prompt('Do I like dogs? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  //   if (!answer) {
-  //     alert('Please try your answer again');
-  //   }
-
   let answerLower;
 
   if (answer) {
@@ -37,11 +32,9 @@ function questionOne() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    // console.log('Answer yes: ' + answerLower);
     alert('You are correct!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
-    console.log('Answer no: ' + answerLower);
     alert('Sorry but I DO like dogs!');
 
   } else {
@@ -58,10 +51,6 @@ questionOne();
 function questionTwo() {
   let answer = prompt('Do I live in the city? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  //   if (!answer) {
-  //     alert('Please try your answer again');
-  //     questionTwo();
-  //   }
   let answerLower;
 
   if (answer) {
@@ -69,11 +58,9 @@ function questionTwo() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    // console.log('Answer yes: ' + answerLower);
     alert('Nope! I live in the country on over 30 Acres!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
-    console.log('Answer no: ' + answerLower);
     alert('Correct! I live in the country on over 30 Acres!');
 
   } else {
@@ -92,11 +79,6 @@ questionTwo();
 function questionThree() {
   let answer = prompt('Do I raise animals? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  //   if (!answer) {
-  //     alert('Please try your answer again');
-  //     questionThree();
-  //   }
-
   let answerLower;
 
   if (answer) {
@@ -104,11 +86,9 @@ function questionThree() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    // console.log('Answer yes: ' + answerLower);
     alert('Absolutely! I have raised Pigs, Goats, Chickens, Turkeys, Cows, and Dogs!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
-    console.log('Answer no: ' + answerLower);
     alert('Sorry! I have had several! Pigs, Goats, Chickens, Turkeys, Cows, and Dogs!');
 
   } else {
@@ -126,22 +106,15 @@ questionThree();
 function questionFour() {
   let answer = prompt('Do I have a family? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  //   if (!answer) {
-  //     alert('Please try your answer again');
-  //     questionFour();
-  //   }
-
   let answerLower;
 
   if (answer) {
     answerLower = answer.toLowerCase();
   }
   if (answerLower === 'yes' || answerLower === 'y') {
-    // console.log('Answer yes: ' + answerLower);
     alert('I sure do! I have an amazing wife and 4 children.');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
-    console.log('Answer no: ' + answerLower);
     alert('Wrong! I have an amazing wife and 4 children.');
 
   } else {
@@ -159,11 +132,6 @@ questionFour();
 function questionFive() {
   let answer = prompt('Am I a good coder? (Please answer "Yes", "No", "Y", or "N" in the input box below.');
 
-  //   if (!answer) {
-  //     alert('Please try your answer again');
-  //     questionFive();
-  //   }
-
   let answerLower;
 
   if (answer) {
@@ -171,11 +139,9 @@ function questionFive() {
   }
 
   if (answerLower === 'yes' || answerLower === 'y') {
-    // console.log('Answer yes: ' + answerLower);
     alert('You are too kind! This took forever to figure out!');
 
   } else if (answerLower === 'no' || answerLower === 'n') {
-    console.log('Answer no: ' + answerLower);
     alert('Ha well I also think I have a looooong way to go!');
 
   } else {
@@ -190,8 +156,9 @@ questionFive();
 
 alert('Thank you for taking the time ' + aName + ' to get to know me better. I hope you enjoy the rest of your time on this site! But first here are 2 more questions!');
 
-function numberGuessingGame() {
 // Question 6: Guess a number game
+
+function numberGuessingGame() {
 
   let numOfGuesses = 4;
   let correctNumber = 5;
@@ -200,7 +167,6 @@ function numberGuessingGame() {
   while (numOfGuesses) {
 
     let userGuess = prompt('Guess what number I am thinking of? (1-10)');
-    console.log(userGuess);
     let comparedNumber = +(userGuess);
 
     if (comparedNumber === correctNumber) {
@@ -247,11 +213,8 @@ function favoriteFoodsGame() {
   // Start of Prompt Loop
 
   for (let i = 0; i < 6; i++) {
-    console.log(`Attempt # ${attempts}`);
-    console.log(`Attempt i ${i}`);
 
     let userGuesses = prompt(`${attempts} foods left to guess!`).toLowerCase();
-    console.log(userGuesses);
 
     // If what the User guess is IN the Food Array...and take away an attempt
 
@@ -260,7 +223,6 @@ function favoriteFoodsGame() {
       userScore++;
       attempts--;
       foods = foods.filter(element => element !== userGuesses);
-      console.log(foods);
 
     // If the User guess is NOT in the Food Array do this...and take away an attempt
     } else {
