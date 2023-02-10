@@ -25,7 +25,13 @@ body {
 
 .aboutMe {
 
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid black;
+    border-image: linear-gradient(to right, white, black) 80;
+    padding: 5px;
+    font-family: Georgia;
     
 }
 
@@ -43,66 +49,17 @@ main {
 }
 
 
-.biography {
+.biography, .education, .jobExperience, .goals, .topTen {
 
     border: 5px;
     border-style: solid;
     border-color: black;
-    padding: 5px;
-    margin: 20px;
-    max-width: 750px;
+    border-image: linear-gradient(to right, black, white) 80;    padding: 5px;
+    margin: 10px;
+    max-width: 800px;
     background-color: rgba(255, 255, 255, 0.8);
     font-family: Georgia;  
 
-}
-
-.education {
-
-    border: 5px;
-    border-style: solid;
-    padding: 5px;
-    margin: 20px;
-    max-width: 750px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-family: Georgia;
-    
-
-}
-
-.jobExperience {
-
-    border: 5px;
-    border-style: solid;
-    padding: 5px;
-    margin: 20px;
-    max-width: 750px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-family: Georgia;
-
-}
-
-.goals {
-
-    border: 5px;
-    border-style: solid;
-    padding: 5px;
-    margin: 20px;
-    max-width: 750px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-family: Georgia;
-
-}
-
-.topTen {
-
-    border: 5px;
-    border-style: solid;
-    padding: 5px;
-    margin: 20px;
-    max-width: 750px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-family: Georgia;
-    
 }
 
 
@@ -135,12 +92,13 @@ h2 {
     font-weight: bold;
     font-size: 150%;
     background-color: rgb(54, 53, 53);
+    background: linear-gradient(to right, white, black);
     color: white;
     padding: 5px;
     margin: 5px;
-    text-align: center;
     text-shadow: 4px 4px 3px black;
     font-family: Georgia;
+    background: linear-gradient(to right, white, black);
 
 }
 
@@ -149,6 +107,6 @@ h3 {
     font-size: medium;
     font-weight: bolder;
     font-family: Georgia;
-
+    text-decoration: underline;
 
 }
