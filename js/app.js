@@ -1,7 +1,8 @@
 //DECLARE STRICT MODE TO PREVENT UNINTENTIONAL VARIABLES
 'use strict';
 
-// Introduction Prompt
+// Introduction Prompt & userScore
+let userScore = 0;
 let aName = '';
 
 function userName() {
@@ -33,6 +34,7 @@ function questionOne() {
 
   if (answerLower === 'yes' || answerLower === 'y') {
     alert('You are correct!');
+    userScore++;
 
   } else if (answerLower === 'no' || answerLower === 'n') {
     alert('Sorry but I DO like dogs!');
@@ -62,6 +64,7 @@ function questionTwo() {
 
   } else if (answerLower === 'no' || answerLower === 'n') {
     alert('Correct! I live in the country on over 30 Acres!');
+    userScore++;
 
   } else {
     alert('Please try your answer again');
@@ -87,6 +90,7 @@ function questionThree() {
 
   if (answerLower === 'yes' || answerLower === 'y') {
     alert('Absolutely! I have raised Pigs, Goats, Chickens, Turkeys, Cows, and Dogs!');
+    userScore++;
 
   } else if (answerLower === 'no' || answerLower === 'n') {
     alert('Sorry! I have had several! Pigs, Goats, Chickens, Turkeys, Cows, and Dogs!');
@@ -113,6 +117,7 @@ function questionFour() {
   }
   if (answerLower === 'yes' || answerLower === 'y') {
     alert('I sure do! I have an amazing wife and 4 children.');
+    userScore++;
 
   } else if (answerLower === 'no' || answerLower === 'n') {
     alert('Wrong! I have an amazing wife and 4 children.');
@@ -140,9 +145,11 @@ function questionFive() {
 
   if (answerLower === 'yes' || answerLower === 'y') {
     alert('You are too kind! This took forever to figure out!');
+    userScore++;
 
   } else if (answerLower === 'no' || answerLower === 'n') {
     alert('Ha well I also think I have a looooong way to go!');
+    userScore++;
 
   } else {
     alert('Please try your answer again');
@@ -171,6 +178,7 @@ function numberGuessingGame() {
 
     if (comparedNumber === correctNumber) {
       alert(`Congratulations! You picked the number ${correctNumber}!`);
+      userScore++;
       break;
 
     } else if (numOfGuesses === 1) {
@@ -199,7 +207,6 @@ numberGuessingGame();
 
 // Variable & Array creation
 
-let userScore = 0;
 let attempts = 6;
 
 
@@ -238,11 +245,11 @@ function favoriteFoodsGame() {
   // Display the Users corrected amount of guesses
 
   if (userScore > 1) {
-    alert(`Hey ${aName}! Looks like you got ${userScore} correct! Great job!`);
+    alert(`Hey ${aName}! Looks like you got ${userScore} correct out of ALL the questions! Great job!`);
   }
 
   if (userScore < 1) {
-    alert(`Wow ${aName}! You got ${userScore} right, that's terrible.`);
+    alert(`Wow ${aName}! You got ${userScore} right over all the questions, that's terrible.`);
   }
 }
 
